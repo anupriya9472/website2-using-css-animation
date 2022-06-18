@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.4)), url('./img/colorful.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav{
+    width: 100%;
+    height: 10vh;
+    background: rgb(128, 68, 68);
+    color: rgb(196, 247, 247);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+nav .logo{
+    width: 25%;
+    text-align: center;
+}
+
+nav .menu{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav .menu a{
+    width: 25%;
+    text-decoration: none;
+    color: rgb(196, 247, 247);
+    font-weight: bold;
+}
+
+nav .menu a:first-child{
+    color: rgb(26, 216, 169);
+}
+
+main{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    color: rgb(196, 247, 247);
+}
+
+section h3{
+    font-size: 30px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px black;
+}
+
+section h1{
+    margin: 30px 0 20px 0;
+    font-size: 40px;
+    font-weight: 600;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+}
+
+section p{
+    font-size: 25px;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+}
+
+section a{
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all .5s ease;
+}
+
+section .btn1{
+    background: #fff;
+    color: #000;
+}
+
+.btn1:hover{
+    background: rgb(26, 216, 169);
+    color: #000;
+}
+
+section .btn2{
+    background: rgb(26, 216, 169);
+    color: #000;
+}
+
+.btn2:hover{
+    background: #fff;
+    color: #000;
+}
+
+.change_content::after{
+    content: ' ';
+    animation: changetext 10s infinite linear;
+    color: rgb(26, 216, 169);
+}
+
+@keyframes changetext{
+    0%{content: "We must travel in the direction of our fear";}
+    25%{content: "No pressure, no diamonds. Thomas Carlyle";}
+    50%{content: "When nothing goes right, go left";}
+    75%{content: "Keep calm and carry on";}
+    100%{content: "Every moment is a fresh beginning";}
+}
